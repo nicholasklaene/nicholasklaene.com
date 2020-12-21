@@ -64,7 +64,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 2rem;
-    width: 10%;
+    width: 15%;
     margin: 2rem auto;
 }
 
@@ -81,6 +81,13 @@ body {
 
 #dark {
     border: 2px solid var(--primary-color);
+}
+
+#color-preferences {
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 0.9rem;
+    display: none;
 }
 
 /* Media Queries */
