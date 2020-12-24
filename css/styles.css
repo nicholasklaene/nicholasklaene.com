@@ -283,4 +283,8 @@ form h1 {
         width: 100%;
     }
 
+    .footer-about {
+        position: initial;
+    }
+
 }
