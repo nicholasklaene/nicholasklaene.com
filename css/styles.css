@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+:root {
+    --blue: #4EA1D3;
+    --dark: #333;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--dark);
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Nav Bar */
+
+nav {
+    position: absolute;
+    top: 3%;
+    left: 17.5%;
+    width: 65%;
+}
+
+.nav-items {
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+    font-weight: 600;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.nav-item {
+    font-size: 1.2rem;
+    margin-right: 2rem;
+    line-height: 1.5rem;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: var(--dark);
+    padding: 0.5rem 1.5rem;
+}
+
+.logo {
+    margin-right: auto;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+/* Footer */
+
+footer {
+    margin-top: auto;
+    background-color: var(--dark);
+    color: #fff;
+    padding: 2.4rem 0 2.4rem 0;
+}
+
+.footer-about {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.icons {
+    text-align: center;
+}
+
+.icons a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+    margin-right: 4rem;
+}
+
+.icons a:last-of-type {
+    margin-right: 0;
+}
+
+.copy {
+    text-align: center;
+    font-style: italic;
+}
+
+/* introduction */
+.introduction {
+    width: 65%;
+    margin: 12rem auto 6rem auto;
+}
+
+.introduction-container {
+    width: 55%;
+}
+
+.headline {
+    font-size: 3.2rem;
+    margin-bottom: 1rem;
+}
+
+.headline span {
+    color: var(--blue);
+}
+
+.currently {
+    width: 90%;
+    font-style: italic;
+    font-size: 1.2rem;
+    margin-bottom: 4rem;
+}
+
+.btn {
+    background-color: var(--blue);
+    text-decoration: none;
+    color: #fff;
+    padding: 0.8rem 1.6rem;
+    font-weight: 600;
+    border-radius: 0.4rem;
+}
+
+.btn:hover {
+    background-color: #3295d3;
+}
+
+/* Work */
+.work {
+    width: 65%;
+    margin: 0 auto 8rem auto;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+}
+
+.project {
+    padding-bottom: 1.2rem;
+    border-radius: 0.4rem;
+    border: 2px solid #ccc;
+}
+
+.project img {
+    border-radius: 0.2rem 0.2rem 0 0;
+    height: 180px;
+    width: 100%;
+    border-bottom: 2px solid #ccc;
+}
+
+.project-name a {
+    text-decoration: none;
+    color: var(--blue);
+}
+
+.project-name, .project-description {
+    padding: 0 1rem;
+}
+
+/* About */
+.about {
+    width: 65%;
+    margin: 12rem auto 6rem auto;
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: 65% 35%;
+}
+
+.about-header {
+    font-size: 2.4rem;
+}
+
+.about-desc {
+    font-size: 1.2rem;
+}
+
+.about img {
+    max-width: 75%;
+    margin: auto;
+}
+
+/* Contact */
+.contact {
+    width: 65%;
+    margin: 12rem auto 6rem auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 70%;
+}
+
+textarea {
+    resize: none;
+    width: 100%;
+    height: 200px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+input {
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 20px;
+    height: 60px;
+}
+
+form h1 {
+    font-size: 2.8rem;
+    text-align: center;
+}
+
+.submit {
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+}
+
+/* 912 px change */
+
+@media screen and (max-width: 912px) {
+
+    .introduction {
+        margin-top: 3rem;
+        width: 90%;
+    }
+
+    .headline {
+        font-size: 3rem;
+    }
+
+    nav {
+        position: initial;
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .nav-items {
+        flex-direction: column;
+    }
+
+    .nav-item {
+        margin-bottom: 2rem;
+    }
+
+    .nav-item a {
+        padding-left: 0;
+    }
+
+    .logo {
+        margin: 2rem 0;
+    }
+
+    .introduction-container {
+        width: 100%;
+    }
+
+    .work {
+        width: 90%;
+    }
+
+    .projects {
+        grid-template-columns: 1fr;
+    }
+
+    .about {
+        margin-top: 3rem;
+        grid-template-columns: 1fr;
+        width: 90%;
+    }
+
+    .contact {
+        margin-top: 3rem;
+        width: 90%;
+    }
+
+    .submit {
+        width: 100%;
+    }
+
+}

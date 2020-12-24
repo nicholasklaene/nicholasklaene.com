@@ -1,32 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/bc3efcbc6a.js" crossorigin="anonymous"></script>
     <title>Nicholas Klaene</title>
 </head>
+
 <body>
-    <div class="wrapper" id="wrapper">
-        <div class="center-container">
-            <div class="logo">
-                <img src="./images/logo.png" alt="logo" height="120px" width="120px" class="logo-img">
-            </div>
-            <div class="btns">
-                <a href="blog.nicholasklaene.com" class="btn">BLOG</a>
-                <a id="portfolio" class="btn">PORTFOLIO</a>
-                <a id="contact" class="btn">CONTACT</a>
-                <a id="about" class="btn">ABOUT</a>
-            </div>
-            <div class="color-mode">
-                <div id="light" class="mode"></div>
-                <div id="dark" class="mode"></div>
-            </div>
-            <small id="color-preferences">Color preferences have been saved for your next visit...</small>
+
+    <!-- Introduction / Top -->
+    <div class="introduction">
+        <div class="introduction-container">
+            <h1 class="headline"><span>Hey there.</span> I'm Nicholas, Student & Developer.</h1>
+            <p class="currently">Currently a second year Computer Science major at Northern Kentucky University.</p>
+            <a href="about.html" class="btn">Learn more about me</a>
         </div>
     </div>
-    <script src="./js/changecolors.js"></script>
-    <script src="./js/popups.js"></script>
+
+    <!-- Work -->
+
+    <div class="work">
+        <h2 class="recent">Recent Projects</h2>
+        <div class="projects">
+            <div class="project">
+                <img src="images/tsrc.png">
+                <h3 class="project-name"><a href="https://github.com/Nklaene/tristaterunning" target="_blank">Tri State Running Company</a></h3>
+                <p class="project-description">Front-end only remodel of tristaterunning.com. No frameworks used.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/app.js"></script>
 </body>
+
 </html>
