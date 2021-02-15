@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;900&display=swap');
+
+:root {
+    --background-color: #FEFEFE;
+    --text-color: #0E0E0E;
+    --blue-color: #3765f6;
+    --link-underline: rgba(14, 14, 14, 0.2);
+    --button-light: #EAEAEA;
+    --button-dark: #3E3E3E;
+}
+
+body {
+    font-family: 'Montserrat';
+    margin: 0;
+    box-sizing: border-box;
+    background-color: var(--background-color);
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    padding: 2rem;
+}
+/*
+    Dark theme button
+*/
+
+.theme {
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 0.6rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    background-color: var(--button-light);
+    color: var(--text-color);
+}
+
+/*
+    Main Content
+*/
+
+main {
+    width: 55%;
+    margin: 8rem auto;
+}
+
+.name {
+    font-weight: 600;
+    font-size: 4.8rem;
+}
+
+.preview {
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: var(--blue-color);
+}
+
+.about {
+    line-height: 1.6;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.link {
+    margin-right: 1rem;
+    font-weight: 600;
+    padding-bottom: 0.4rem;
+    text-decoration: none;
+    border-bottom: 2px solid var(--link-underline);
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+.link:hover {
+    color: var(--blue-color);
+    border-color: var(--blue-color);
+}
+
+.link-light,
+.link-light:visited {
+    color: var(--text-color);
+}
+ 
+.link-dark,
+.link-dark:visited {
+    color: var(--background-color);
+    border-color: var(--button-dark);
+}
+
+@media screen and (max-width: 1200px) {
+    main {
+        margin-top: 6rem;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        margin-top: 1rem;
+    }
+}

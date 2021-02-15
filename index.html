@@ -1,68 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Software Developer | Nicholas Klaene</title>
+  </head>
+  <body>
+    <!-- Navbar (Dark Theme Button Only) -->
+    <nav>
+      <a class="theme theme-light">Dark Theme: <span id="current-mode">Off</span></a>
+    </nav>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
-    <script src="https://kit.fontawesome.com/bc3efcbc6a.js" crossorigin="anonymous"></script>
-    <title>Nicholas Klaene</title>
-</head>
+    <!-- Main Content -->
+    <main>
+      <div class="name">Nick Klaene</div>
+      <div class="preview">Software Developer based in Cincinnati, OH</div>
 
-<body>
+      <p class="about">
+        Focused on building web-based applications that solve real world
+        problems. I love exploring new technologies and have a passion for
+        bringing ideas to life with code.
+      </p>
 
-    <!-- Introduction / Top -->
-    <div class="introduction">
-        <div class="introduction-container">
-            <h1 class="headline"><span>Hey there.</span> I'm Nicholas, Student & Software Developer.</h1>
-            <p class="currently">Currently a second year Computer Science major at Northern Kentucky University.</p>
-            <a href="about.html" class="btn">Learn more about me</a>
-        </div>
-    </div>
+      <a href="mailto:nicholasklaene@gmail.com" class="link link-light">Email</a>
+      <a href="download.png" target="__blank" class="link link-light">Resume</a>
+      <a href="https://github.com/nicholasklaene" target="__blank" class="link link-light">Github</a>
+      <a href="https://www.linkedin.com/in/nicholas-klaene/" target="__blank" class="link link-light">Linkedin</a>
 
-    <!-- Work -->
+    </main>
 
-    <div class="work">
-        <h2 class="recent">What I'm up to</h2>
-        <div class="projects">
-            <div class="project">
-                <img src="images/market.jpg">
-                <h3 class="project-name"><a href="https://github.com/Nklaene/tristaterunning"
-                        target="_blank">Marketeye</a></h3>
-                <p class="project-description">Full-stack serverless application that allows users to keep an eye on stocks. Working to add paper trading.</p>
-            </div>
-            <div class="project">
-                <img src="images/soon.jpeg">
-                <h3 class="project-name"><a href="https://github.com/Nklaene/tristaterunning" target="_blank">Personal Blog</a></h3>
-                <p class="project-description">Creating a tech blog for my personal website. Will be located at blog.nicholasklaene.com.</p>
-            </div>
-
-            <div class="project">
-                <img src="images/coi.png">
-                <h3 class="project-name"><a href="https://informatics.plus" target="_blank">Informatics+</a></h3>
-                <p class="project-description">Working as a Special Topics Technical Apprentice for Informatics+ at NKU.
-                    Typically I work on full-stack web development projects.</p>
-            </div>
-            <div class="project">
-                <img src="images/gea.png">
-                <h3 class="project-name"><a>GE Aviation</a></h3>
-                <p class="project-description">Joining GE Aviation as a Digital Technology Intern in the Summer of 2021.
-                </p>
-            </div>
-
-            <div class="project">
-                <img src="images/cs.jpg">
-                <h3 class="project-name"><a>Student</a></h3>
-                <p class="project-description">Currently studying computer science at NKU. I expect to graduate in May 2023.
-                </p>
-            </div>
-
-        </div>
-    </div>
-
-
-    <script src="./js/app.js"></script>
-</body>
-
+    <script src="app.js"></script>
+  </body>
 </html>
