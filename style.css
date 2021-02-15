@@ -78,15 +78,21 @@ a:visited {
     border-color: var(--blue-color);
 }
 
+
 .link-light,
 .link-light:visited {
     color: var(--text-color);
 }
- 
+
 .link-dark,
 .link-dark:visited {
     color: var(--background-color);
     border-color: var(--button-dark);
+}
+
+.link-light:visited:hover, .link-dark:visited:hover {
+    color: var(--blue-color);
+    border-color: var(--blue-color);
 }
 
 @media screen and (max-width: 1200px) {
