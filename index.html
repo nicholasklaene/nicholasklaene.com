@@ -4,34 +4,61 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
     <title>Software Developer | Nicholas Klaene</title>
   </head>
+
   <body>
-    <!-- Navbar (Dark Theme Button Only) -->
-    <nav>
-      <a class="theme theme-light">Dark Theme: <span id="current-mode">Off</span></a>
-    </nav>
+    <div id="app">
+      <!-- Navbar (Dark Theme Button Only) -->
+      <nav>
+        <a class="theme theme-light"
+          >Dark Theme: <span id="current-mode">Off</span></a
+        >
+      </nav>
 
-    <!-- Main Content -->
-    <main>
-      <div class="name">Nick Klaene</div>
-      <div class="preview">Software Developer based in Cincinnati, OH</div>
+      <!-- Main Content -->
+      <main>
+        <div class="name">Nick Klaene</div>
+        <div class="preview">Software Developer based in Cincinnati, OH</div>
 
-      <p class="about">
-        Focused on building web-based applications that solve real world
-        problems. I love exploring new technologies and have a passion for
-        bringing ideas to life with code.
-      </p>
+        <p class="about">
+          Focused on building web-based applications that solve real world
+          problems. I love exploring new technologies and have a passion for
+          bringing ideas to life with code.
+        </p>
 
-      <a href="mailto:nicholasklaene@gmail.com" class="link link-light">Email</a>
-      <a href="resume.pdf" target="__blank" class="link link-light">Resume</a>
-      <a href="https://github.com/nicholasklaene" target="__blank" class="link link-light">Github</a>
-      <a href="https://www.linkedin.com/in/nicholas-klaene/" target="__blank" class="link link-light">Linkedin</a>
+        <a @click="toggleModal" class="link link-light">Email</a>
+        <a href="resume.pdf" target="__blank" class="link link-light">Resume</a>
+        <a
+          href="https://github.com/nicholasklaene"
+          target="__blank"
+          class="link link-light"
+          >Github</a
+        >
+        <a
+          href="https://www.linkedin.com/in/nicholas-klaene/"
+          target="__blank"
+          class="link link-light"
+          >Linkedin</a
+        >
+      </main>
 
-    </main>
+      <!-- Modal -->
+      <div id="modal" v-if="showModal" @click.self="toggleModal">
+        <div id="popup">
+          <input type="email" placeholder="example@email.com" v-model="email" />
+          <input type="text" placeholder="Your name" v-model="name" />
+          <input type="text" />
+        </div>
+      </div>
+    </div>
 
-    <script src="app.js"></script>
+    <!-- Vue CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+    <!-- My JS -->
+    <script src="js/contactForm.js"></script>
+    <script src="js/darkMode.js"></script>
   </body>
 </html>
