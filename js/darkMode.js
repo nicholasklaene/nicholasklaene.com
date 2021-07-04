@@ -1,4 +1,4 @@
-const themeBtn = document.querySelector(".theme");
+const themeBtn = document.querySelector("#theme");
 let darkMode = false;
 
 themeBtn.addEventListener("click", (e) => {

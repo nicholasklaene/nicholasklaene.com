@@ -105,35 +105,78 @@ a:visited {
   width: 100%;
   position: absolute;
   top: 0;
-  background-color: rgba(10, 10, 10, 0.5);
+  background-color: rgba(10, 10, 10, 0.8);
 }
 
 #popup {
-  width: 400px;
+  width: 500px;
   border-radius: 2rem;
   position: absolute;
+  display: flex;
+  flex-direction: column;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 2rem;
   background: white;
-  display: flex;
-  flex-direction: column;
+  border: thin solid white;
 }
 
-input {
-  padding: 0.8rem 0.8rem 0.2rem 0.8rem;
-  width: 80%;
+#modal h2 {
+  text-align: center;
+  color: var(--text-color);
+}
+
+.form-group {
   margin: 0 auto;
-  border: 0;
-  border-bottom: thin solid #777;
+  width: 90%;
+  display: inline-flex;
+  flex-direction: column;
+  padding: 0 0.8rem 0.2rem 0.8rem;
+}
+
+label {
+  position: relative;
+  top: 8px;
+  left: 0.6rem;
+  font-size: 0.75rem;
+  color: #555;
+  font-weight: 500;
+}
+
+label span {
+  background-color: white;
+  padding: 0.1rem 0.4rem;
+  border: thin solid white;
+}
+
+input,
+textarea {
+  border: thin solid #bbb;
+  padding: 0.7rem;
+  border-radius: 4px;
   margin-bottom: 0.5rem;
-  line-height: 0;
 }
 
 input:focus {
   outline: 0;
-  border-bottom: thin solid black;
+  border: thin solid #555;
+}
+
+textarea {
+  resize: none;
+  height: 200px;
+  font-family: "Montserrat";
+}
+
+.btn-wrap {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0.6rem;
+}
+
+.error {
+  border: thin solid crimson;
 }
 
 @media screen and (max-width: 1200px) {
@@ -141,10 +184,49 @@ input:focus {
     margin-top: 6rem;
     width: 90%;
   }
+  #popup {
+    width: 400px;
+  }
 }
 
 @media screen and (max-width: 600px) {
   main {
     margin-top: 1rem;
   }
+  #popup {
+    width: 90%;
+    padding: 1rem;
+  }
+}
+
+/* Modal Dark Theme */
+#popup.bg-dark {
+  background-color: var(--text-color);
+  border-color: #555;
+}
+
+#popup.bg-dark h2 {
+  color: var(--background-color);
+}
+
+input.bg-dark,
+textarea.bg-dark {
+  background-color: var(--text-color);
+  color: white;
+}
+
+input.bg-dark:focus,
+textarea.bg-dark:focus {
+  border: thin solid white;
+}
+
+.span-dark {
+  background-color: var(--text-color);
+  border-color: transparent;
+  color: white;
+}
+
+.btn-dark {
+  color: var(--background-color);
+  background-color: var(--button-dark);
 }

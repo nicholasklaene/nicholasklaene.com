@@ -10,10 +10,11 @@
   </head>
 
   <body>
+    <!-- Mounting Vue App -->
     <div id="app">
       <!-- Navbar (Dark Theme Button Only) -->
       <nav>
-        <a class="theme theme-light"
+        <a class="theme theme-light" id="theme" @click="toggleDarkMode"
           >Dark Theme: <span id="current-mode">Off</span></a
         >
       </nav>
@@ -47,10 +48,45 @@
 
       <!-- Modal -->
       <div id="modal" v-if="showModal" @click.self="toggleModal">
-        <div id="popup">
-          <input type="email" placeholder="example@email.com" v-model="email" />
-          <input type="text" placeholder="Your name" v-model="name" />
-          <input type="text" />
+        <div id="popup" :class="{'bg-dark': darkMode}">
+          <h2>Get in Touch</h2>
+          <div class="form-group">
+            <label>
+              <span :class="{'span-dark': darkMode}"> Email</span>
+            </label>
+            <input
+              :class="{'error': errors.email, 'bg-dark': darkMode}"
+              @change="evalEmail"
+              type="email"
+              placeholder="Required"
+              v-model="email"
+            />
+          </div>
+          <div class="form-group">
+            <label><span :class="{'span-dark': darkMode}">Name</span></label>
+            <input
+              type="text"
+              placeholder="John Smith"
+              v-model="name"
+              :class="{'bg-dark': darkMode}"
+            />
+          </div>
+          <div class="form-group">
+            <label><span :class="{'span-dark': darkMode}">Message</span></label>
+            <textarea
+              v-model="message"
+              :class="{'bg-dark': darkMode}"
+              placeholder="Your message goes here..."
+            ></textarea>
+          </div>
+          <div class="btn-wrap">
+            <a
+              class="theme"
+              :class="{'btn-dark': darkMode}"
+              @click="saveContactInfo"
+              >Get in Touch</a
+            >
+          </div>
         </div>
       </div>
     </div>
