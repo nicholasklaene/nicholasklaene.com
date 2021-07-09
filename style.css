@@ -41,6 +41,7 @@ nav {
 
 main {
   width: 55%;
+  max-width: 1200px;
   margin: 8rem auto;
 }
 
@@ -196,6 +197,12 @@ textarea {
   #popup {
     width: 90%;
     padding: 1rem;
+  }
+}
+
+@media screen and (min-width: 2200px) {
+  main {
+    margin-top: 20rem;
   }
 }
 
