@@ -1,9 +1,10 @@
 <template>
   <nav>
     <div class="name">Nick Klaene</div>
-    <router-link to="/">About</router-link>
-    <router-link to="/">Blog</router-link>
-    <router-link to="/">Contact</router-link>
+    <a href="#about" v-if="$route.name === 'Home'">About</a>
+    <router-link to="/" v-if="$route.name !== 'Blog'">Blog</router-link>
+    <router-link to="/" v-if="$route.name !== 'Home'">Home</router-link>
+    <a href="#contact" v-if="$route.name === 'Home'">Contact</a>
   </nav>
 </template>
 

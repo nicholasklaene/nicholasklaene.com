@@ -1,6 +1,6 @@
 <template>
   <div class="banner">
-    <img src="../assets/me.jpg" alt="me" width="120" />
+    <img src="../assets/me.jpg" alt="me" width="100" />
     <div class="text">
       <strong>Nick Klaene</strong> is a Lorem ipsum dolor sit amet consectetur
       adipisicing elit. Architecto, expedita nostrum amet perspiciatis laborum
@@ -22,7 +22,7 @@ export default {
 <style lang="scss" scoped>
 .banner {
   margin: 0 auto;
-  padding: 0.5rem 4rem;
+  padding: 1rem 4rem 0.5rem 4rem;
   max-width: 720px;
   display: flex;
   align-items: center;

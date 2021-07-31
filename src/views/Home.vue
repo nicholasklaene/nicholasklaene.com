@@ -1,7 +1,7 @@
 <template>
   <CTA />
   <AboutBanner />
-  <div class="content">
+  <div class="content" id="about">
     <h1>Welcome to the official website of Nick Klaene, Software Developer</h1>
     <h3>What do I do and why should you care?</h3>
     <p>
@@ -22,7 +22,7 @@
     <h2>Web Application Development</h2>
     <p>
       Nearly everything today is built with one thing in mind: the web. I
-      specialize in building web-solutions to critical problems.
+      specialize in building web-solutions to solve critical problems.
     </p>
     <div class="explore">
       <router-link to="/">
@@ -30,16 +30,18 @@
         <i class="fas fa-arrow-right"></i>
       </router-link>
     </div>
+    <ContactForm />
   </div>
 </template>
 
 <script>
 import CTA from "@/components/CTA.vue";
 import AboutBanner from "@/components/AboutBanner.vue";
+import ContactForm from "@/components/ContactForm.vue";
 
 export default {
   name: "Home",
-  components: { CTA, AboutBanner },
+  components: { CTA, AboutBanner, ContactForm },
 };
 </script>
 
