@@ -2,9 +2,8 @@
   <div class="banner">
     <img src="../assets/me.jpg" alt="me" width="100" />
     <div class="text">
-      <strong>Nick Klaene</strong> is a Lorem ipsum dolor sit amet consectetur
-      adipisicing elit. Architecto, expedita nostrum amet perspiciatis laborum
-      iste. Lorem ipsum dolor sit amet.
+      <strong>Software Developer</strong> located in the Cincinnati area.
+      Specializing in cloud-native software solutions.
       <router-link to="/">
         About Nick
         <i class="fas fa-arrow-right"></i>

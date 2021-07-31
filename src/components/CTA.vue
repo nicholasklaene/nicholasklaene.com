@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="content">
-      Latest blog:
+      Latest post:
       <router-link to="/">
         The Benefits of Serverless Computing
         <i class="fas fa-arrow-right"></i>
