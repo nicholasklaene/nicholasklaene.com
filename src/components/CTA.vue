@@ -19,7 +19,7 @@ export default {
 <style lang="scss" scoped>
 .container {
   padding: 0.6rem 0;
-  background-color: rgba(238, 238, 238, 0.5);
+  background-color: #e5e7eb7f;
   font-size: 0.9rem;
   .content {
     padding: 0 2rem;
