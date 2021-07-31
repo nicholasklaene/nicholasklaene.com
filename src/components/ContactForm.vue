@@ -2,7 +2,7 @@
   <div class="container" id="contact">
     <h2>Contact</h2>
     <p>I'll get back to you as soon as possible.</p>
-    <form @submit.prevent="saveEmail">
+    <form @submit.prevent="saveInformation">
       <input
         type="email"
         v-model="email"
