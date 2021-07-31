@@ -1,10 +1,10 @@
 <template>
   <CTA />
   <AboutBanner />
-  <div class="content" id="about">
+  <section>
     <HomeContent />
     <ContactForm />
-  </div>
+  </section>
 </template>
 
 <script>
@@ -20,7 +20,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.content {
+section {
   padding: 0 4rem;
   max-width: 720px;
   margin: 0 auto;

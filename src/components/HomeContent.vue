@@ -18,7 +18,7 @@
   <h2>Web Application Development</h2>
   <p>
     Nearly everything today is built with one thing in mind: the web. I
-    specialize in building web-solutions to solve critical problems.
+    specialize in building web-solutions that solve real-world problems.
   </p>
   <div class="explore">
     <router-link to="/">
