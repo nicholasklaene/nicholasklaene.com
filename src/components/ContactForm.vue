@@ -9,6 +9,12 @@
         required
         placeholder="What's your email address?"
       />
+      <div class="textarea-wrapper">
+        <textarea
+          v-model="message"
+          placeholder="Enter a custom message here..."
+        ></textarea>
+      </div>
       <button type="submit">Get in touch</button>
     </form>
     <small>I won't share your email.</small>
@@ -21,11 +27,12 @@ export default {
   data() {
     return {
       email: "",
+      message: "",
     };
   },
   methods: {
-    saveEmail() {
-      console.log(this.email);
+    saveInformation() {
+      console.log(this.email, this.message);
     },
   },
 };
@@ -44,20 +51,35 @@ export default {
     margin-block-end: 0.8rem;
   }
   form {
-    width: 90%;
-    display: grid;
-    margin: 0 auto 0.5rem auto;
-    grid-template-columns: 70% 30%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     gap: 1rem;
-    @media screen and (max-width: 540px) {
-      grid-template-columns: 1fr;
-    }
+    margin: 0 auto 1rem auto;
     input {
       border: none;
       font-size: 1rem;
-      padding: 0.5rem;
+      padding: 1rem;
+    }
+    .textarea-wrapper {
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      textarea {
+        font-family: Poppins, sans-serif;
+        border: none;
+        width: 100%;
+        max-width: 100%;
+        padding: 1rem;
+        min-height: 100px;
+        font-size: 1rem;
+        &:focus {
+          outline: none;
+        }
+      }
     }
     button {
+      max-width: 150px;
       border: none;
       background-color: #42b883;
       color: #fff;
