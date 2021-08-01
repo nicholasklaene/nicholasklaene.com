@@ -4,7 +4,6 @@
     <a href="https://www.linkedin.com/in/nicholas-klaene/" target="_blank">
       Linkedin
     </a>
-    <a href="@/assets/resume.pdf" target="_blank">Resume</a>
   </footer>
 </template>
 
