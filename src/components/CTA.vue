@@ -1,9 +1,16 @@
 <template>
   <div class="container">
-    <div class="content">
-      Latest project:
+    <div class="content" v-if="$route.name == 'Home'">
+      Want to see my work?
+      <router-link to="/projects">
+        Check it out.
+        <i class="fas fa-arrow-right"></i>
+      </router-link>
+    </div>
+    <div class="content" v-else>
+      Want to learn more about me?
       <router-link to="/">
-        Training Visualizer
+        Go here
         <i class="fas fa-arrow-right"></i>
       </router-link>
     </div>

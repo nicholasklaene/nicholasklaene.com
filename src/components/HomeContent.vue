@@ -21,8 +21,8 @@
     specialize in building web-solutions that solve real-world problems.
   </p>
   <div class="explore">
-    <router-link to="/">
-      Explore nicholasklaene.com
+    <router-link to="/projects">
+      View my work
       <i class="fas fa-arrow-right"></i>
     </router-link>
   </div>

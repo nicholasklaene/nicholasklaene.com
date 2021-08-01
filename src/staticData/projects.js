@@ -4,7 +4,7 @@ export default [
     id: 1,
     name: "Inklinq.io",
     summary:
-      "Open-source software designed to improve the maintainability of technical documentation.",
+      "Open-source software designed to improve the maintainability of technical documentation. Currently in progress.",
     link: "https://inklinq.io",
   },
   {
