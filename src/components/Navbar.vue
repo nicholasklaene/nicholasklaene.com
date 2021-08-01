@@ -2,7 +2,9 @@
   <nav>
     <div class="name">Nick Klaene</div>
     <a href="#about" v-if="$route.name === 'Home'">About</a>
-    <router-link to="/" v-if="$route.name !== 'Blog'">Blog</router-link>
+    <router-link to="/projects" v-if="$route.name !== 'Projects'">
+      Projects
+    </router-link>
     <router-link to="/" v-if="$route.name !== 'Home'">Home</router-link>
     <a href="#contact" v-if="$route.name === 'Home'">Contact</a>
   </nav>

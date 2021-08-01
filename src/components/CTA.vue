@@ -1,9 +1,9 @@
 <template>
   <div class="container">
     <div class="content">
-      Latest post:
+      Latest project:
       <router-link to="/">
-        The Benefits of Serverless Computing
+        Training Visualizer
         <i class="fas fa-arrow-right"></i>
       </router-link>
     </div>

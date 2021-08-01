@@ -4,10 +4,6 @@
     <div class="text">
       <strong>Software Developer</strong> located in the Cincinnati area.
       Specializing in cloud-native software solutions.
-      <router-link to="/">
-        About Nick
-        <i class="fas fa-arrow-right"></i>
-      </router-link>
     </div>
   </div>
 </template>

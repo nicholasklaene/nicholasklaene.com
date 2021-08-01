@@ -1,5 +1,5 @@
 <template>
-  <h1>Welcome to the official website of Nick Klaene, Software Developer</h1>
+  <h1>Welcome to my official website.</h1>
   <h3 id="about">What do I do and why should you care?</h3>
   <p>
     I'm a passionate software developer with the technical skills to bring your
