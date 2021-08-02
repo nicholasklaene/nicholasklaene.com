@@ -1,0 +1,48 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Transform: "AWS::Serverless-2016-10-31"
+Description: nicholasklaene.com contact form
+Resources:
+  contactFormAPI:
+    Type: AWS::Serverless::Api
+    Properties:
+      StageName: Prod
+      Cors:
+        AllowMethods: "'*'"
+        AllowHeaders: "'*'"
+        AllowOrigin: "'*'"
+  saveContactInfo:
+    Type: "AWS::Serverless::Function"
+    Properties:
+      Handler: app.lambda_handler
+      Runtime: python3.6
+      CodeUri: .
+      Description: AWS Lambda function to save info from contact form.
+      MemorySize: 128
+      Timeout: 3
+      Environment:
+        Variables:
+          TABLE_NAME: !Ref contactTable
+          REGION_NAME: !Ref AWS::Region
+      Events:
+        ApiEvent:
+          Type: Api
+          Properties:
+            Path: /contact
+            Method: POST
+            RestApiId: !Ref contactFormAPI
+      Policies:
+        - DynamoDBCrudPolicy:
+            TableName: !Ref contactTable
+  contactTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      AttributeDefinitions:
+        - AttributeName: "email"
+          AttributeType: "S"
+      KeySchema:
+        - AttributeName: "email"
+          KeyType: "HASH"
+      ProvisionedThroughput:
+        ReadCapacityUnits: 1
+        WriteCapacityUnits: 1
+      TableName: "contact.nicholasklaene.com"
