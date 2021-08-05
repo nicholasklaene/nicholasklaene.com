@@ -30,6 +30,9 @@ export default {
   font-size: 0.9rem;
   .content {
     padding: 0 2rem;
+    @media screen and (max-width: 600px) {
+      padding: 0rem 1rem;
+    }
     margin: 0 auto;
     text-align: center;
     a {

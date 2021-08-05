@@ -23,6 +23,9 @@ nav {
   max-width: 720px;
   margin: 0 auto;
   padding: 1rem 4rem;
+  @media screen and (max-width: 600px) {
+    padding: 0.75rem 2rem;
+  }
   font-weight: 600;
   .name {
     margin-right: auto;

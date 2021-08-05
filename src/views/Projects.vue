@@ -33,6 +33,9 @@ export default {
 <style lang="scss" scoped>
 section {
   padding: 0 4rem 2rem 4rem;
+  @media screen and (max-width: 600px) {
+    padding: 1rem 2rem 0.5rem 2rem;
+  }
   max-width: 720px;
   margin: 0 auto;
   line-height: 1.8;

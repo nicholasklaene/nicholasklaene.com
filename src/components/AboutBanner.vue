@@ -18,6 +18,9 @@ export default {
 .banner {
   margin: 0 auto;
   padding: 1rem 4rem 0.5rem 4rem;
+  @media screen and (max-width: 600px) {
+    padding: 1rem 2rem 0.5rem 2rem;
+  }
   max-width: 720px;
   display: flex;
   align-items: center;
