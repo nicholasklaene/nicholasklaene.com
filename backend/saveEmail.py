@@ -6,10 +6,11 @@ client = boto3.resource('dynamodb')
 table = client.Table("contactForm")
 
 def lambda_handler(event, context):
-    email, message = event["email"], event["message"]
+    body = json.loads(event["body"])
+    email, message = body["email"], body["message"]
     
     now = datetime.now()
-    time_stamp = now.strftime("%d/%m/%Y %H:%M:%S")
+    time_stamp = now.strftime("%m/%d/%Y %H:%M:%S")
     
     data = {
         "email": email,
