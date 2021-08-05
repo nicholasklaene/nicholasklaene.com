@@ -1,5 +1,5 @@
 <template>
-  <div class="container" id="contact">
+  <div class="container" id="contact" v-if="!emailSaved">
     <h2>Contact</h2>
     <p>I'll get back to you as soon as possible.</p>
     <form @submit.prevent="saveInformation">
@@ -19,6 +19,10 @@
     </form>
     <small>I won't share your email.</small>
   </div>
+  <div class="container" id="contact" v-else>
+    <h2>I'll get back to you soon!</h2>
+    <p>Your response was saved.</p>
+  </div>
 </template>
 
 <script>
@@ -28,11 +32,31 @@ export default {
     return {
       email: "",
       message: "",
+      emailSaved: false,
     };
   },
   methods: {
-    saveInformation() {
-      console.log(this.email, this.message);
+    async saveInformation() {
+      const data = {
+        email: this.email,
+        message: this.message,
+      };
+
+      await fetch(
+        "https://153fclmvag.execute-api.us-east-2.amazonaws.com/saveEmail",
+        {
+          method: "POST",
+          mode: "no-cors",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(data),
+        }
+      );
+
+      this.email = "";
+      this.message = "";
+      this.emailSaved = true;
     },
   },
 };
