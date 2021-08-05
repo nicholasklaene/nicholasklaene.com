@@ -1,19 +1,11 @@
 # nicholasklaene.com
 
-## Project setup
-```
-npm install
-```
+Personal website built to serve as a central hub for my professional social media accounts & projects.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## Technologies Used
 
-### Compiles and minifies for production
-```
-npm run build
-```
+Frontend: Vue.js, SCSS
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Backend: Python 
+
+Deployment/Cloud: AWS Serverless with Lambda, API Gateway, DynamoDB, S3, Cloudfront, Route 53, SES
