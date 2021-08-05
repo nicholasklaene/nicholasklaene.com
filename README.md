@@ -11,4 +11,6 @@ Backend: Python
 Deployment/Cloud: AWS Serverless with Lambda, API Gateway, DynamoDB, S3, Cloudfront, Route 53, SES
 
 ## Architecture: 
-![Architecture Diagram](architecture.png=400x)
+<p align="center">
+  <img src="architecture.png" width="60%">
+</p>
