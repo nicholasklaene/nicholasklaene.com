@@ -6,7 +6,8 @@ Personal website built to serve as a central hub for my professional social medi
 
 Frontend: Vue.js, SCSS
 
-Backend: Python 
+Backend: Python (serverless Lambda function) 
+
 
 Deployment/Cloud: AWS Serverless with Lambda, API Gateway, DynamoDB, S3, Cloudfront, Route 53, SES
 
