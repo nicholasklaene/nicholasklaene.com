@@ -41,7 +41,6 @@ export default {
         email: this.email,
         message: this.message,
       };
-
       await fetch(
         "https://153fclmvag.execute-api.us-east-2.amazonaws.com/saveEmail",
         {
@@ -53,7 +52,6 @@ export default {
           body: JSON.stringify(data),
         }
       );
-
       this.email = "";
       this.message = "";
       this.emailSaved = true;
@@ -84,6 +82,9 @@ export default {
       border: none;
       font-size: 1rem;
       padding: 1rem;
+      &:focus {
+        outline: none;
+      }
     }
     .textarea-wrapper {
       width: 100%;

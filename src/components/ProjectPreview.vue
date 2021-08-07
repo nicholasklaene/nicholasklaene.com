@@ -2,7 +2,7 @@
   <div>
     <a :href="project.link" target="_blank">
       {{ project.name }}
-      <i class="fas fa-arrow-right"></i>
+      <i class="fab fa-github"></i>
     </a>
     <p>
       {{ project.summary }}
@@ -28,6 +28,10 @@ div {
     color: #487eb0;
     &:hover {
       opacity: 0.8;
+    }
+    i {
+      display: inline-block;
+      padding-left: 0.4rem;
     }
   }
 }
