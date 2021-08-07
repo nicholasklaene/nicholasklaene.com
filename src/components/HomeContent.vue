@@ -12,9 +12,26 @@
   <p>
     Having somebody knowledgable about cloud and everything it brings to the
     table is key to survival in today's tech landscape. I'm passionate about
-    crafting cloud-native business solutions to simplify the software
-    development process, saving businesses time and money.
+    crafting cloud-native solutions to simplify the software development
+    process. I have sat and passed both the AWS Solutions Architect Associate
+    and the AWS Developer Associate.
   </p>
+
+  <div class="certifications">
+    <a
+      href="https://s3.us-east-2.amazonaws.com/assets.nicholasklaene.com/dva.pdf"
+      target="_blank"
+    >
+      <img src="../assets/dva.png" width="268" />
+    </a>
+    <a
+      href="https://s3.us-east-2.amazonaws.com/assets.nicholasklaene.com/saa.pdf"
+      target="_blank"
+    >
+      <img src="../assets/saa.png" width="268" />
+    </a>
+  </div>
+
   <h2>Web Application Development</h2>
   <p>
     Nearly everything today is built with one thing in mind: the web. I
@@ -46,6 +63,20 @@ h3 {
   a {
     color: #487eb0;
     text-decoration: none;
+  }
+}
+.certifications {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+  gap: 2rem;
+  width: 100%;
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+    gap: 1rem;
+    a {
+      text-align: center;
+    }
   }
 }
 </style>
