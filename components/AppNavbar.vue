@@ -1,5 +1,5 @@
 <template>
-  <nav class="mt-8">
+  <nav class="pt-8">
     <ul class="flex font-bold tracking-wide">
       <li class="text-2xl">
         <nuxt-link to="/">

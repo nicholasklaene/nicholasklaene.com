@@ -8,7 +8,7 @@
         ></font-awesome-icon>
       </h6>
     </div>
-    <div class="flex justify-between text-4xl">
+    <div class="flex flex-wrap justify-between text-4xl">
       <font-awesome-icon :icon="['fab', 'aws']"></font-awesome-icon>
       <font-awesome-icon :icon="['fab', 'docker']"></font-awesome-icon>
       <font-awesome-icon :icon="['fab', 'python']"></font-awesome-icon>
