@@ -4,10 +4,9 @@ Personal website built to serve as a central hub for my professional social medi
 
 ## Technologies Used
 
-Frontend: Vue.js, SCSS
+Frontend: NuxtJS
 
 Backend: Python (serverless Lambda function) 
-
 
 Deployment/Cloud: AWS Serverless with Lambda, API Gateway, DynamoDB, S3, Cloudfront, Route 53, SES
 
