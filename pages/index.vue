@@ -7,24 +7,28 @@
 </template>
 
 <script>
-import { defineComponent } from '@nuxtjs/composition-api'
+import { defineComponent, ref, useFetch } from '@nuxtjs/composition-api'
 import axios from 'axios'
 
 export default defineComponent({
   name: 'IndexPage',
-  data() {
+  setup() {
+    const projects = ref([])
+
+    const { fetch } = useFetch(async () => {
+      const res = await axios.get(
+        'https://api.github.com/search/repositories?q=user:nicholasklaene&sort=stars&per_page=2'
+      )
+      if (res.status === 200) {
+        projects.value = res.data.items
+      }
+    })
+
+    fetch()
+
     return {
-      projects: [],
+      projects,
     }
   },
-  async fetch() {
-    const res = await axios.get(
-      'https://api.github.com/search/repositories?q=user:nicholasklaene&sort=stars&per_page=3'
-    )
-    if (res.status === 200) {
-      this.projects = res.data.items
-    }
-  },
-  fetchOnServer: true,
 })
 </script>

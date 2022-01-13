@@ -56,7 +56,7 @@ export default {
   fontawesome: {
     icons: {
       solid: ['faAngleDoubleDown', 'faEnvelope'],
-      regular: [],
+      regular: ['faStar'],
       brands: [
         'faAws',
         'faJs',

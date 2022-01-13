@@ -1,7 +1,7 @@
 <template>
   <div class="app text-gray-700">
     <AppNavbar />
-    <nuxt />
+    <nuxt keep-alive />
     <AppFooter />
   </div>
 </template>

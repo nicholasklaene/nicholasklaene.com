@@ -7,10 +7,10 @@
         </nuxt-link>
       </li>
       <li class="ml-auto mr-4">
-        <nuxt-link to="/about"> About </nuxt-link>
+        <a href="#contact"> Contact </a>
       </li>
       <li>
-        <nuxt-link to="/blog"> Blog </nuxt-link>
+        <a href="#projects">Projects</a>
       </li>
     </ul>
   </nav>
