@@ -3,7 +3,7 @@
     <ul class="flex font-bold tracking-wide">
       <li class="text-2xl">
         <nuxt-link to="/">
-          <span class="text-purple-900">Nicholas</span>K
+          <span class="text-blue-500">Nicholas</span>K
         </nuxt-link>
       </li>
       <li class="ml-auto mr-4">

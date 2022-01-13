@@ -3,6 +3,7 @@
     <IndexHero />
     <IndexTechStack />
     <IndexProjects :projects="projects" />
+    <IndexContact />
   </main>
 </template>
 
