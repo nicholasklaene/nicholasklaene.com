@@ -10,6 +10,7 @@
           class="p-4 border bg-gray-50 focus:outline-none focus:shadow-outline focus:border-blue-500"
           placeholder="example@email.com"
           v-model="email"
+          required
         />
       </label>
       <label class="flex flex-col mb-4" for="name">
@@ -20,15 +21,17 @@
           class="p-4 border bg-gray-50 focus:outline-none focus:shadow-outline focus:border-blue-500"
           placeholder="John Doe"
           v-model="name"
+          required
         />
       </label>
-      <label for="message" class="flex flex-col">
+      <label for="message" class="flex flex-col mb-4 b">
         Message
         <textarea
           name="message"
           placeholder="Your message..."
-          class="min-w-full max-w-full mb-4 bg-gray-50 p-4 h-64 border focus:outline-none focus:shadow-outline focus:border-blue-500"
+          class="min-w-full max-w-full g-gray-50 p-4 h-64 border focus:outline-none focus:shadow-outline focus:border-blue-500"
           v-model="message"
+          required
         ></textarea>
       </label>
       <button
@@ -49,15 +52,17 @@ export default defineComponent({
     const email = ref('')
     const name = ref('')
     const message = ref('')
+    const submitted = ref(false)
 
     function submit() {
-      console.log('Submit!')
+      console.log('Called')
     }
 
     return {
       email,
       name,
       message,
+      submitted,
       submit,
     }
   },
