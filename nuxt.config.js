@@ -15,7 +15,7 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [],
+  css: ['@/assets/main.css'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],
@@ -37,6 +37,8 @@ export default {
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
+    '@nuxtjs/composition-api/module',
+    '@nuxtjs/fontawesome',
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -50,4 +52,20 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
+
+  fontawesome: {
+    icons: {
+      solid: ['faAngleDoubleDown'],
+      regular: [],
+      brands: [
+        'faAws',
+        'faJs',
+        'faVuejs',
+        'faNode',
+        'faPython',
+        'faJava',
+        'faDocker',
+      ],
+    },
+  },
 }

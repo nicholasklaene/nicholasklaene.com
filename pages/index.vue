@@ -1,5 +1,8 @@
 <template>
-  <Tutorial />
+  <main>
+    <IndexHero />
+    <IndexTechStack />
+  </main>
 </template>
 
 <script>
